@@ -1,0 +1,162 @@
+{
+  "classifier": "GradientBoosting",
+  "classifier_metrics": {
+    "accuracy": 0.9233333333333333,
+    "precision": 0.9481481481481482,
+    "recall": 0.9660377358490566,
+    "f1": 0.9570093457943926,
+    "roc_auc": 0.9582749326145552,
+    "confusion_matrix": [
+      [
+        21,
+        14
+      ],
+      [
+        9,
+        256
+      ]
+    ]
+  },
+  "all_classifier_metrics": {
+    "LogisticRegression": {
+      "accuracy": 0.8833333333333333,
+      "precision": 0.9914529914529915,
+      "recall": 0.8754716981132076,
+      "f1": 0.9298597194388778,
+      "roc_auc": 0.9633423180592992,
+      "confusion_matrix": [
+        [
+          33,
+          2
+        ],
+        [
+          33,
+          232
+        ]
+      ]
+    },
+    "RandomForest": {
+      "accuracy": 0.88,
+      "precision": 0.9872340425531915,
+      "recall": 0.8754716981132076,
+      "f1": 0.928,
+      "roc_auc": 0.9574123989218327,
+      "confusion_matrix": [
+        [
+          32,
+          3
+        ],
+        [
+          33,
+          232
+        ]
+      ]
+    },
+    "GradientBoosting": {
+      "accuracy": 0.9233333333333333,
+      "precision": 0.9481481481481482,
+      "recall": 0.9660377358490566,
+      "f1": 0.9570093457943926,
+      "roc_auc": 0.9582749326145552,
+      "confusion_matrix": [
+        [
+          21,
+          14
+        ],
+        [
+          9,
+          256
+        ]
+      ]
+    }
+  },
+  "regressor": "GradientBoostingRegressor",
+  "regressor_metrics": {
+    "mae": 15.84001440441539,
+    "rmse": 19.84219738246509,
+    "r2": 0.6855988592344668
+  },
+  "all_regressor_metrics": {
+    "RandomForestRegressor": {
+      "mae": 15.917595496845127,
+      "rmse": 20.16372738702308,
+      "r2": 0.6753269682227766
+    },
+    "GradientBoostingRegressor": {
+      "mae": 15.84001440441539,
+      "rmse": 19.84219738246509,
+      "r2": 0.6855988592344668
+    }
+  },
+  "feature_importance": {
+    "stakeholder_risk": 0.37572176200781326,
+    "approval_pressure": 0.07577119500739449,
+    "average_compensation_delay": 0.0571929166466813,
+    "legal_risk_index": 0.04469597961359424,
+    "historical_delay_index": 0.035925395548345576,
+    "rehabilitation_gap": 0.028339190855512866,
+    "approval_delay_days": 0.02697359428960999,
+    "inter_department_dependencies": 0.025961884596701366,
+    "progress_variance": 0.025563748737334684,
+    "district_historical_delay_rate": 0.025260922863891044,
+    "pending_approvals": 0.02443079328544379,
+    "number_of_affected_families": 0.02169504127985425,
+    "documentation_gap": 0.021349524360554158,
+    "compensation_gap": 0.021223524328543825,
+    "rehabilitation_completion_percentage": 0.019998907749286157,
+    "total_land_area": 0.015025025629468801,
+    "similar_project_average_delay": 0.014448386044317037,
+    "department_historical_delay_rate": 0.013290949385495607,
+    "landowner_cooperation_score": 0.013261604910635308,
+    "documentation_completion_percentage": 0.012163305080972037
+  },
+  "feature_names": [
+    "pending_approvals",
+    "approval_delay_days",
+    "departments_involved",
+    "inter_department_dependencies",
+    "documentation_completion_percentage",
+    "legal_dispute",
+    "number_of_active_cases",
+    "dispute_severity",
+    "ownership_conflict",
+    "court_stay",
+    "objection_count",
+    "compensation_completion_percentage",
+    "average_compensation_delay",
+    "rehabilitation_required",
+    "rehabilitation_completion_percentage",
+    "resettlement_required",
+    "resettlement_completion_percentage",
+    "stakeholder_response_rate",
+    "landowner_cooperation_score",
+    "grievance_count",
+    "unresolved_grievances",
+    "district_historical_delay_rate",
+    "department_historical_delay_rate",
+    "similar_project_average_delay",
+    "planned_progress_percentage",
+    "actual_progress_percentage",
+    "progress_variance",
+    "elapsed_days",
+    "remaining_planned_days",
+    "number_of_landowners",
+    "number_of_affected_families",
+    "number_of_plots",
+    "total_land_area",
+    "compensation_gap",
+    "documentation_gap",
+    "approval_pressure",
+    "legal_risk_index",
+    "stakeholder_risk",
+    "rehabilitation_gap",
+    "historical_delay_index",
+    "acquisition_completion_percentage",
+    "coordination_complexity",
+    "days_remaining_ratio"
+  ],
+  "training_size": 1500,
+  "n_features": 43,
+  "test_size": 300,
+  "disclaimer": "Model metrics are based on the synthetic demonstration dataset and should not be interpreted as production validation."
+}
